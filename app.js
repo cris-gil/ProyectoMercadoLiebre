@@ -10,11 +10,11 @@ app.get('/', (req, res) => {
 })
 
 app.get('/', (req, res) => {
-    res.sendFile(path.resolve(__dirname, + './views/register.html'));
+    res.sendFile(path.resolve(__dirname, './views/register.html'));
 })
 
 app.get('/', (req, res) => {
-    res.sendFile(path.resolve(__dirname, + './views/login.html'));
+    res.sendFile(path.resolve(__dirname, './views/login.html'));
 })
 
 app.listen(port, ()=> console.log('Port running...'));
