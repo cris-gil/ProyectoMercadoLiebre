@@ -17,8 +17,7 @@ header {
 
 .top-header {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
     overflow: hidden;
     padding: 10px;
 }
@@ -172,8 +171,8 @@ article i {
 
 /* footer */
 
-footer {
-    width: 90vw;
+.footer {
+    width: 60vw;
     margin: auto;
     margin-top: 10px;
     border: 10px;
