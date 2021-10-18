@@ -1,0 +1,436 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "roboto";
+}
+
+img {
+    text-align: center;
+    margin: 10px;
+    width: 80vw;
+}
+
+/* header */ 
+
+header {
+    background-color: yellow;
+    width: 100vw;
+}
+
+header .top-header .logo {
+    width: 360px;
+}
+
+header .top-header .form {
+    text-align: center;
+}
+
+header .top-header p {
+    width: 80vw;
+    font-size: 12px;
+    text-align: center;
+    margin-top: 10px;
+    margin: auto;
+}
+
+nav{
+    margin-top: 10px;
+}
+
+nav ul {
+    list-style: none;
+}
+
+li a {
+    display: block;
+    text-decoration: none;
+    text-align: center;    
+}
+
+.burger-menu {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    padding: 5px;
+    background: rgb(99, 99, 216);
+    margin: auto;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.banner {
+    width: 100vw;
+    margin: 0px;
+
+}
+
+/* main */
+
+main {
+    width: 100vw;
+    background-color: gainsboro;
+}
+
+main .ultima-visita {
+    width: 70vw;
+    margin: auto;
+}
+
+main .ultima-visita h3 {
+    font-size: 24px;
+    text-align: center;
+}
+
+main .ultima-visita .productos {
+    width: 80%;
+    margin: auto;
+}
+
+main .ultima-visita .productos .precios {
+    font-size: 18px;
+}
+
+main .ultima-visita .productos article {
+    margin: 10px;
+    padding: 10px;
+    border: auto;
+    border-radius: 5px;
+    background: white;
+    overflow: hidden;
+}
+
+main .ultima-visita .productos article img {
+    max-width: 90%;
+}
+
+main .ultima-visita .productos article .main-product {
+    margin: auto;
+    border-top: 1px solid #ebebeb;
+    padding: 15px;
+}
+
+main .ultima-visita .productos article .main-product i {
+    display: block;
+    font-size: 16px;
+    border: 1px solid #39b54a;
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+    border-radius: 50%;
+}
+
+footer{
+    display: block;
+    width: 100vw;
+    text-align: center;
+}
+
+footer div {
+    border: 20px;
+    margin: 20px;
+}
+
+footer .footer i {
+   justify-content: center;
+    border-bottom: 10px;
+    width: 2em;
+}
+/* Media queries */
+
+/*Mobile*/
+ @media only screen and (max-width: 360px) {
+    main .productos article h4 {
+        display: none;
+    }
+    main .ultima-visita .productos article .main-product .descripcion{
+        display: none;
+    }
+    
+}
+
+/*Tablets*/
+@media (min-width: 361px) {
+    header .burger-menu {
+            display: none;
+        }
+    
+    main .ultima-visita .productos article img {
+        box-shadow: 0px 0px 10px 0px #000000;
+    }
+}
+
+/*Desktop*/
+
+@media (min-width: 769px) {
+}
+
+
+VERSIÓN #2
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "roboto";
+}
+
+img {
+    display: block;
+    width: 80%;
+    border: 0;
+    justify-content: center;
+}
+
+/* header */ 
+
+header {
+    width: 100vw;
+    background: yellow;
+}
+
+.top-header {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-content:center;
+}
+
+.logo {
+    display: block;
+    width: 50%;
+    margin: auto;    
+}
+
+p {
+    display: block;
+    margin: auto;
+    text-align: center;
+
+}
+
+.form {
+    display: block;
+    width: 50%;
+    width: 20px;
+    padding: 10px;
+    margin: auto;
+}
+
+
+nav {
+    display: block;
+    margin-top: 10px;
+}
+
+ul {
+    margin-top: 10px;
+}
+
+ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+header i {
+    color: black;
+}
+
+.burger-menu {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    padding: 5px;
+    background: rgb(99, 99, 216);
+    margin: auto;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.banner {
+    display: block;
+    width: 100%;
+    margin: 0px; 
+    margin-top: 20px; 
+}
+
+/* main */
+
+main {
+    background: #ebebeb;
+    width: 100vw;
+    margin: auto;
+    padding: 10px;
+}
+
+.ultima-visita {
+    width: 70%;
+    margin: auto;
+}
+
+h3{
+    font-size: 24px;
+    margin: auto;
+    padding: 10px;
+    text-align: center;
+}
+
+article {
+    background: white;
+    padding: 15px;
+    margin-top: 10px;
+
+}
+
+article img {
+    display: block;
+    margin: auto;
+    padding: 10px;
+}
+
+.main-product {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border-top: 1px solid #ebebeb ;
+    margin-top: 10px;
+    padding: 15px;
+   
+}
+
+/* article i {
+    display: flex;
+    font-size: 16px ;
+    padding: 5px ;
+    width: 30px ;
+    height: 30px ;
+    border: 1px solid #39b54a ;
+    background-color: #FFF ;
+    border-radius: 50% ;
+    position: absolute;
+    right: 20%;  
+    right: -15px;  
+} */
+
+.precios {
+    display: block;
+    width: 30%;
+}
+
+.descuentos {
+    display: block;
+    width: 70%;
+}
+
+.descripcion {
+    margin-top: 10px;
+}
+
+
+
+/* footer */
+
+footer {
+    width: 90vw;
+    margin: auto;
+    margin-top: 10px;
+    border: 10px;
+    padding: 10px;
+}
+
+.container {
+    width: 60%;
+    text-align: center;
+    border: 20px;
+    padding: 10px;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.copyrigth{
+    margin: auto;
+    margin-top: 20px;
+    padding: 10px;
+    border: 10px;
+    font-size: 12px;
+}
+
+i {
+    display: block;
+    justify-content: center;
+    border-bottom: 10px;
+    color: blue;
+    width: 2em;
+    margin: auto;
+
+}
+
+
+
+
+/* Media queries */
+/*Mobile*/
+
+@media only screen and (max-width: 360px) {
+    main .productos article h4 {
+        display: none;
+    }
+    main .descripcion{
+        display: none;
+    }
+    
+    nav {
+        display: none;
+    }
+}
+
+/* Tablet */
+
+@media (min-width: 361px) {
+    main {
+        width: 100vw;
+    }
+
+    .section {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    article img {
+        box-shadow: 0px 0px 10px 0px #000000;
+    }
+
+}
+
+
+/* Desktop */
+
+/* @media (min-width: 769px) {
+    .burger-menu {
+        display: none;
+    }
+
+    main {
+        max-width: 90%;
+        margin: auto;
+    }
+
+    .ultima-visita{
+        display: flex;
+
+    }
+
+    article {
+        width: 50%;
+    }
+   
+    main .ultima-visita .productos article img {
+        box-shadow: 0px 0px 10px 0px #000000;
+    }
+
+}
+} */
