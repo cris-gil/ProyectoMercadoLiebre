@@ -91,14 +91,16 @@ ul li a :hover {
     border-radius: 5px;
 }
 
+/* MAIN */
+
 .banner {
     display: block;
     width: 100%;
     margin: 0px;
-    margin-top: 10px;
+    margin-top: 0px;
 }
 
-/* MAIN */
+
 
 main {
     width: 100vw;
@@ -107,7 +109,7 @@ main {
     padding: 10px;
 }
 
-section {
+main section {
     width: 90%;
     margin: auto;
 }
@@ -226,13 +228,9 @@ footer i {
 }
 
 main section {
-    width: 80%;
     display: flex;
     justify-content: space-around;
-}
-
-article {
-    flex-wrap: wrap;
+    flex-direction: column;
 }
 
 @media screen and (min-width: 481px) {
@@ -262,6 +260,7 @@ article {
     main section {
         display: flex;
         justify-content: center;
+        flex-direction: row;
     }
 } 
 
@@ -310,23 +309,62 @@ article {
 /* Register */
 
 main#data {
-    width: 100vw;
+    width: 50vw;
     margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
     padding: 10px;
     background: gainsboro;
+    box-shadow: 0px 0px 10px 0px rgba(236, 144, 195, 0.67);
+}
+
+main#data div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 30px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+input {
+    border-radius: 5px;
+    border: none;
+}
+
+.intereses input {
+    display: flex;
+    flex-direction: column;
+    justify-content:  center;
 }
 
 /* Login */
 
 
-.login-section {
-    width: 70px;
+main#data {
+    width: 40vw;
     margin: auto;
-    padding-top: 20px;
+    margin-top: 50px;
+    margin-bottom: 20px;
     padding: 10px;
-    background: white;
+    background: gainsboro;
     box-shadow: 0px 0px 10px 0px rgba(236, 144, 195, 0.67);
 }
+
+main#data div {
+    text-align: center;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 30px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+input {
+    border-radius: 5px;
+    border: none;
+}
+
 
 button .submit{
     background: white;
@@ -334,7 +372,7 @@ button .submit{
 }
 
 button:hover {
-    background: violet;
+    background-color: violet;
 }
 
 
