@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link rel="stylesheet" href="./css/normalize.css">
-    <link href='/css/styles.css' rel='stylesheet'>
+    <link href='/css/style.css' rel='stylesheet'>
     <script src="https://kit.fontawesome.com/217cc77558.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
 </head>
@@ -25,7 +25,7 @@
             <p><i class="fas fa-hand-holding-usd"></i>Compra en cuotas y sin tarjetas de
                 crédito.</p>
         </section>
-
+        <section class="links">
         <nav>
             <ul>
                 <li><a href="#">Ofertas</a></li>
@@ -35,21 +35,20 @@
             </ul>
 
             <ul>
-                <li> <a href="login">Crea tu cuenta <i class="fas fa-id-card"></a></i></li>
-                <li><a href="register">Ingresa<i class=" fas fa-sign-in-alt"></i></a></li>
+                <li> <a href="/login">Crea tu cuenta <i class="fas fa-id-card"></a></i></li>
+                <li><a href="/register">Ingresa<i class=" fas fa-sign-in-alt"></i></a></li>
                 <li><a href="#">Mis compras<i class="fas fa-shopping-basket"></a></i></li>
             </ul>
         </nav>
-
+        </section>
         <div class="burger-menu">
             <i class="fas fa-bars burger"></i>
         </div>
-        <div class="banner">
-            <img class="banner" src="./img/img-home-banner.jpg" alt="Banner">
-        </div>
+
     </header>
     <main>
-        <form action="/register" method="POST">
+            <h3>INGRESA A TU CUENTA</h3>
+        <form action="/login" method="POST">
 
             <p>
                 <label for="nombre">Nombre de usuario: </label>
@@ -62,13 +61,13 @@
             </p>
 
             <p>
-                <button type="submit">Enviar</button>
+                <button type="submit"><a href="/home"></a> Enviar</button>
             </p>
 
         </form>
     </main>
-    <footer class="final">
-        <section class="footer">
+    <footer>
+        <section class="foot">
             <div class="container">
                 <i class="fas fa-credit-card"></i>
                 <h4> <strong>Pagá con tarjeta o en efectivo</strong></h4>
@@ -87,8 +86,8 @@
                 <p>¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer,
                     porque estás siempre protegid@.</p>
             </div>
-            <h4 class="copyrigth"><strong>Copyright © 1999-2020 MercadoLiebre S.R.L.</strong></h4>
         </section>
+        <h4 class="copyrigth"><strong>Copyright © 1999-2020 MercadoLiebre S.R.L.</strong></h4>
     </footer>
 </body>
 

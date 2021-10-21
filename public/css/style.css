@@ -1,0 +1,341 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "roboto";
+}
+
+img {
+    width: 70%;
+}
+
+/* Header */
+
+header {
+    width: 100vw;
+    background: yellow;
+}
+
+.top-header {
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    flex-wrap: wrap;
+}
+
+.top-header div {
+    display: block;
+    margin: auto;
+    padding-top: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.logo {
+    display: block;
+    margin: 0px;
+    width: 50%;
+    text-align: center;
+}
+
+.form {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.top-header p {
+    display: block;
+    justify-content: center;
+    margin: 0;
+    padding: 10px;
+    font-size: small;
+
+}
+
+.links nav {
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    padding: 10px;
+}
+
+.links nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    padding: 10px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: black;
+    margin: auto;
+    padding: 10px;
+}
+
+ul li a :hover {
+    background-color: rgb(139, 117, 117);
+    border-radius: 5px;
+}
+
+.burger-menu {
+    width: 30px;
+    height: 30px;
+    margin: auto;
+    padding: 8px;
+    background: rgb(99, 99, 216);
+    border-radius: 5px;
+}
+
+.banner {
+    display: block;
+    width: 100%;
+    margin: 0px;
+    margin-top: 10px;
+}
+
+/* MAIN */
+
+main {
+    width: 100vw;
+    margin: auto;
+    background: #ebebeb;
+    padding: 10px;
+}
+
+section {
+    width: 90%;
+    margin: auto;
+}
+
+article {
+    background: white;
+    width: 90%;
+    padding: 15px;
+    margin:10px;
+    border:2px;
+}
+
+article img {
+    display: block;
+    margin: auto;
+    text-align: center;
+    padding: 10px;
+    width: 70%;
+}
+
+.main-product {
+    display: flex;
+    flex-wrap: wrap;
+    border-top: 1px solid #ebebeb ;
+    margin-top: 10px;
+    padding: 20px;
+    position: relative;
+}
+
+article i {
+    display: flex;
+    font-size: 16px ;
+    padding: 5px ;
+    width: 30px ;
+    height: 30px ;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+    transition: all .5s transform;
+}
+
+article i:hover{
+    transform: rotateZ(-90deg);
+}
+
+.precios {
+    display: block;
+    font-size: small;
+    width: 30%;
+}
+
+.descuentos {
+    display: block;
+    font-size: small;
+    color: #39b54a;
+}
+
+article h4 {
+    margin-top: 10px;
+    display: none
+}
+
+article:hover h4{
+    display: block;
+}
+
+/* footer */
+
+.footer {
+    width: 60vw;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    margin-top: 10px;
+    border: 10px;
+    padding: 10px;
+}
+
+.container {
+    width: 80%;
+    text-align: center;
+    border: 20px;
+    padding: 10px;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.copyrigth{
+    margin: auto;
+    margin-top: 20px;
+    padding: 10px;
+    border: 10px;
+    font-size: 12px;
+}
+
+footer i {
+    display: block;
+    justify-content: center;
+    border-bottom: 10px;
+    color: blue;
+    width: 2em;
+    margin: auto;
+
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 480px) {
+    .menu {
+        display: none;
+    }
+}
+
+main section {
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+}
+
+article {
+    flex-wrap: wrap;
+}
+
+@media screen and (min-width: 481px) {
+    .burger-menu {
+        display: none;   
+    }     
+
+    article {
+        padding: 10px;
+        transition: all 5s transform;
+    }
+
+    article:hover {
+        box-shadow: 0px 0px 10px 0px #000000;
+    }
+
+    .top-header {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .top-header p {
+        justify-content: flex-start;
+        text-align: center;
+    }
+
+    main section {
+        display: flex;
+        justify-content: center;
+    }
+} 
+
+@media screen and (min-width: 769px){
+    .burger-menu {
+        display: none;   
+    }
+    
+    .top-header {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .top-header p {
+        justify-content: flex-start;
+        text-align: center;
+    }
+
+    main section {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+    }
+
+    .foot {
+        display: flex;
+        justify-content: center;
+    }
+
+    .container {
+        width: 60%;
+    }
+
+    .container i{
+        padding-bottom: 10px;
+        transition: all 5s transform;
+    }
+    
+    .container i:hover {
+        color: rgb(255, 0, 0);
+        
+    }
+
+}
+
+/* Register */
+
+main#data {
+    width: 100vw;
+    margin: auto;
+    padding: 10px;
+    background: gainsboro;
+}
+
+/* Login */
+
+
+.login-section {
+    width: 70px;
+    margin: auto;
+    padding-top: 20px;
+    padding: 10px;
+    background: white;
+    box-shadow: 0px 0px 10px 0px rgba(236, 144, 195, 0.67);
+}
+
+button .submit{
+    background: white;
+    transition: all 5s transform;
+}
+
+button:hover {
+    background: violet;
+}
+
+
+
